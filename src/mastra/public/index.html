@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keplar Outreach</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="brand">
+          <span class="dot"></span>
+          <h1>Keplar Outreach</h1>
+        </div>
+        <button id="new-chat" class="ghost-btn" type="button" title="Start a new thread">New chat</button>
+      </header>
+
+      <main id="thread" class="thread" aria-live="polite">
+        <!-- messages render here -->
+      </main>
+
+      <form id="composer" class="composer" autocomplete="off">
+        <div class="prospect">
+          <label>
+            <span>Prospect LinkedIn URL</span>
+            <input
+              id="prospect-url"
+              type="url"
+              placeholder="https://www.linkedin.com/in/…"
+              value="https://www.linkedin.com/in/begonia-fafian-31b07b9/"
+            />
+          </label>
+        </div>
+        <div class="row">
+          <textarea
+            id="message"
+            rows="1"
+            placeholder="Tell the assistant who to reach out to…"
+          >Please research this prospect and draft a personalized Keplar outreach email.</textarea>
+          <button id="send" type="submit" class="send-btn">Send</button>
+        </div>
+        <p class="hint">
+          The assistant acknowledges instantly, researches in the background, and drops the email
+          into this thread when it's ready — even if you reload.
+        </p>
+      </form>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
